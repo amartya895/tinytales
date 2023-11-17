@@ -29,17 +29,17 @@ function App() {
         {info.postcount} Posts
       </div>
       <div className="w-[74%] bg-gray-400 border-b-2 ml-[100px]"></div>
-      {info.posts.map((post,index) => {
+      {info.posts.map((post, index) => {
         return (
           <PostCard
-          key={index}
+            key={index}
             title={post.title}
             desc={post.description}
             typedesc={post.typeDesc}
             time={post.post_time}
             readtime={post.post_read_time}
             view={post.post_view}
-            name={info.name.toLowerCase().split(' ').join("")}
+            name={info.name.toLowerCase().split(" ").join("")}
           />
         );
       })}
