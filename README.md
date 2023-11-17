@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Project Name: Terribly Tiny Tales Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Tiny Tales is a web application built for profile view of user. It allows users to view there profile in mobile view . The project is deployed on Vercel, and you can access it [here](https://tinytales-livid.vercel.app/).
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **Tailwind CSS**: Used for styling to create a responsive and visually appealing UI.
+- **Heroicons**: Utilized for SVG icons throughout the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Features Component
 
-### `npm test`
+The Features component is responsible for displaying various features such as like, view, heart, and star. These features are dynamically rendered based on the data provided.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Navbar Component
 
-### `npm run build`
+The Navbar component includes the company logo, title, and a button to navigate to the courses section.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Postcard Component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Postcard component is a standalone element that is used to display individual posts. It is dynamically mapped to the post data retrieved from the user's profile.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### User Profile Component
 
-### `npm run eject`
+The User Profile component aggregates all the user details and presents them in a structured format. It utilizes the Postcard component to display each post.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Images**: Contains all the images used in the application.
+- **utils**: Holds the JSON file with user profile data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project is deployed on Vercel. The live version of the application can be accessed [here](https://tinytales-livid.vercel.app/).
 
-## Learn More
+## How to Run Locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository.
+2. Install dependencies using [package manager, e.g., npm or yarn].
+3. Run the application locally using [provide the command, e.g., `npm start`].
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
