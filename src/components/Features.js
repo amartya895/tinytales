@@ -1,6 +1,6 @@
 import React from "react";
 
-const Features = () => {
+const Features = ({ star, like, view, heart }) => {
   return (
     <div className="flex mt-4 justify-start items-center">
       <div className="text-gray-500 flex  justify-start items-center">
@@ -20,7 +20,7 @@ const Features = () => {
             />
           </svg>
         </div>
-        <span>125</span>
+        <span>{star}</span>
       </div>
       <div className="text-gray-500 flex ml-4 justify-start items-center">
         <div className="h-7 w-7 flex justify-center items-center bg-yellow-300 rounded-full mr-2">
@@ -39,7 +39,7 @@ const Features = () => {
             />
           </svg>
         </div>
-        <span>12</span>
+        <span>{like}</span>
       </div>
       <div className="text-gray-500 flex ml-4 justify-start items-center">
         <div className="h-7 w-7 flex justify-center items-center bg-gray-400 rounded-full mr-2">
@@ -63,7 +63,7 @@ const Features = () => {
             />
           </svg>
         </div>
-        <span>57.8K</span>
+        <span>{view}</span>
       </div>
       <div className="text-gray-500 flex ml-4 justify-start items-center">
         <div className="h-7 w-7 flex justify-center items-center bg-pink-500 rounded-full mr-2">
@@ -82,7 +82,7 @@ const Features = () => {
             />
           </svg>
         </div>
-        <span>26.0K</span>
+        <span>{heart}</span>
       </div>
     </div>
   );

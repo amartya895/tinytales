@@ -1,10 +1,10 @@
 import React from "react";
 
-const PostCard = () => {
+const PostCard = ({ title, desc, typedesc, time, readtime, view, name }) => {
   return (
-    <div className="px-2 border-b-2 py-8">
+    <div className="px-4 border-b-2 py-8">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">India v/s Australia</h1>
+        <h1 className="text-2xl font-semibold">{title}</h1>
         <div className="h-7 w-7 flex justify-center items-center bg-yellow-300 rounded-full mr-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,19 +22,15 @@ const PostCard = () => {
           </svg>
         </div>
       </div>
-      <p className="py-4 text-gray-400">
-        Think about it - this cricket series was akin to theraDy.
-        <br />
-        <br />
-        Laying our childhood trauma up top, working with it slowly and surely
-        over two m..
-      </p>
+      <p className="py-4 text-gray-400">{desc}</p>
       <div className="flex justify-between text-sm items-center">
         <div className="text-gray-500">
-          <span className="text-cyan-300">thought</span>by anugosalia
+          <span className="text-cyan-300">{typedesc}</span>by {name}
         </div>
         <div className="text-gray-300 text-sm ">
-            <h1>January 21•1min Read•156 Views</h1>
+          <h1>
+            {time}•{readtime}•{view} Views
+          </h1>
         </div>
       </div>
     </div>

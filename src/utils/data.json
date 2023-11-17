@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Anuj Gosalia",
+      "followers": 6482,
+      "following": 245,
+      "position": "Co-founder & CEO Terribly Tiny Tales",
+      "instagram_id": "https://www.instagram.com/anujgosalia",
+      "star": 125,
+      "like": 12,
+      "views": "57.8K",
+      "heart": "26.0K",
+      "postcount": 134,
+      "posts": [
+        {
+          "title": "India v/s Australia",
+          "description": "Think about it - this cricket series was akin to therapy. Laying our childhood trauma up top, working with it slowly and surely over two m..",
+          "typeDesc": "thought",
+          "post_time": "January 21",
+          "post_read_time": "1 min",
+          "post_view": 156
+        },
+        {
+          "title": "A Changing World Order",
+          "description": "Friends, colleagues, and everyone engaged in knowledge work are beginning to sense this, including...",
+          "typeDesc": "article",
+          "post_time": "February 10",
+          "post_read_time": "3 min",
+          "post_view": 210
+        },
+        {
+          "title": "Write To Build",
+          "description": "- stones\n- products\n- companies",
+          "typeDesc": "quote",
+          "post_time": "March 5",
+          "post_read_time": "2 min",
+          "post_view": 180
+        }
+      ]
+    }
+  ]
+}

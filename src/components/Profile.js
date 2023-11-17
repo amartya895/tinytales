@@ -2,7 +2,7 @@ import React from "react";
 import profileBg from "../images/profileBg.jpeg";
 import pp from "../images/profilepic.webp";
 
-const Profile = () => {
+const Profile = ({ name, follower, following, position, instaid }) => {
   return (
     <>
       <div className="w-full h-40 overflow-hidden">
@@ -22,7 +22,7 @@ const Profile = () => {
         </div>
         <div className="flex flex-col absolute ml-8 mt-2 left-36">
           <div className="flex justify-center items-center">
-            <h1 className="text-lg font-semibold">Anuj Gosalia</h1>
+            <h1 className="text-lg font-semibold">{name}</h1>
             <span className="h-5 w-5 rounded-full bg-purple-700 ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,13 +59,13 @@ const Profile = () => {
           <div className="flex text-center justify-between text-gray-400 mt-1">
             <div className="">
               <div className="border-2 rounded-md border-gray-400  font-bold px-3">
-                <h1>2422</h1>
+                <h1>{follower}</h1>
               </div>
               <p className="text-sm">Followers</p>
             </div>
             <div className="">
               <div className="border-2 rounded-md border-gray-400 font-bold  px-3">
-                <h1>232</h1>
+                <h1>{following}</h1>
               </div>
               <p className="text-sm">Following</p>
             </div>
@@ -74,14 +74,12 @@ const Profile = () => {
       </div>
 
       <div className="mt-32 pl-8">
-        <h1 className="text-lg text-gray-500">
-          Co-founder & CEO of Terribly Tiny Tales
-        </h1>
+        <h1 className="text-lg text-gray-500">{position}</h1>
         <a
           className="text-cyan-300"
           href="https://www.instagram.com/anujgosalia"
         >
-          https://www.instagram.com/anujgosalia
+          {instaid}
         </a>
       </div>
     </>
