@@ -5,7 +5,7 @@ import pp from "../images/profilepic.webp";
 const Profile = ({ name, follower, following, position, instaid }) => {
   return (
     <>
-      <div className="w-full h-40 overflow-hidden">
+      <div className="w-full  overflow-hidden">
         <img
           src={profileBg}
           alt="profile background"
